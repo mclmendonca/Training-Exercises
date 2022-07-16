@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1657998443 source:d:\users\mclme\documents\github\training-exercises\estruturas repetitivas\c\par_impar\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
