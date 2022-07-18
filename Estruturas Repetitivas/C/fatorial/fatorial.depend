@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1658045687 source:d:\users\mclme\documents\github\training-exercises\estruturas repetitivas\c\fatorial\main.c
+	<stdio.h>
+	<stdlib.h>
+
