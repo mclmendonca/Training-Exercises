@@ -2,34 +2,26 @@
 #include <stdlib.h>
 #include <string.h>
 
-void ler_texto(char *buffer, int length)
-{
-    fgets(buffer, length, stdin);
-    strtok(buffer, "\n");
-}
-void limpar_entrada()
-{
-    char c;
-    while ((c = getchar()) != '\n' && c != EOF) {}
-}
 int main()
 {
     int i, n;
-    char nome[10];
-    double idade[10], altura[10], altmed, contag, under16;
 
     printf("Quantas pessoas serao digitadas? ");
     scanf("%d", &n);
 
+    char nome[n][50];
+    double idade[n], altura[n], altmed = 0, contag = 0, under16 = 0;
+
     for(i = 0; i<n; i++)
     {
-        printf("Dados da ", i+1,"a pessoa: \n");
+        printf("Dados da %da pessoa: \n", i+1);
         printf("Nome: ");
-        ler_texto(nome, 10);
-        printf("\nIdade: ");
-        scanf("%lf", &idade);
-        printf("\nAltura: ");
-        scanf("%lf", &altura);
+        fseek(stdin,0,SEEK_END);
+        gets(nome[i]);
+        printf("Idade: ");
+        scanf("%lf", &idade[i]);
+        printf("Altura: ");
+        scanf("%lf", &altura[i]);
 
     }
 
@@ -43,19 +35,15 @@ int main()
         }
     }
 
+        printf("\nAltura media: %.2lf\n", altmed/contag);
+        printf("Pessoas com menos de 16 anos: %.1lf % \n", ((under16/contag)*100));
 
-
-        printf("Altura média: %.2lf\n", altmed/contag);
-        printf("Pessoas com menos de 16 anos: %.1lf %\n", ((contag/under16)*100));
-
-        for(i = 0; i<n; i++)
+        for(i = 0; i < n; i++)
         {
-            if(idade[i] < 16)
+            if(idade[i] < 16.0)
             {
-                printf(nome[i],"\n");
+                printf("%s\n", nome[i]);
             }
         }
-
-
             return 0;
         }
