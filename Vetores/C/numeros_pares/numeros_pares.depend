@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1658252938 source:c:\users\marcelo.vestudante\desktop\training exercises\vetores\c\numeros_pares\main.c
+	<stdio.h>
+	<stdlib.h>
+
