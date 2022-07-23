@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1658546633 source:d:\users\mclme\documents\github\training-exercises\vetores\c\media_pares\main.c
+	<stdio.h>
+	<stdlib.h>
+
