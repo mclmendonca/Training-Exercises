@@ -12,6 +12,7 @@ int main()
     int vet[n];
     int soma = 0, cont = 0;
 
+
     for(int i = 0 ; i < n; i++)
     {
         printf("Digite um numero: ");
@@ -24,10 +25,12 @@ int main()
 
     }
 
+    if(cont == 0) {
 
-    printf("MEDIA DOS PARES = %.1d", (soma/cont));
-
-
+        printf("NENHUM NUMERO PAR\n");
+    } else {
+        printf("MEDIA DOS PARES = %.1d", (soma/cont));
+    }
 
     return 0;
 }

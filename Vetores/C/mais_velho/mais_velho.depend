@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1658640723 source:d:\users\mclme\documents\github\training-exercises\vetores\c\mais_velho\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
