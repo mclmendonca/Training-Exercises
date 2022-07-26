@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1658798589 source:d:\users\mclme\documents\github\training-exercises\estruturas repetitivas\c\dados_pessoas\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
