@@ -25,11 +25,11 @@ int main()
         printf("Genero da %da pessoa: ", i+1);
         limpar_entrada();
         scanf("%c", &genero[i]);
-    }
+
     if(genero[i] == 'F' || genero[i] == 'f')
     {
         mediam = mediam + altura[i];
-        contm = contm +1;
+        contm = contm + 1.0;
     }
     if(altura[i] < menor )
     {
@@ -42,6 +42,7 @@ int main()
     if(genero[i] == 'M' || genero[i] == 'm')
     {
         nhomens = nhomens + 1;
+    }
     }
 
     printf("Menor altura = %.2lf\n", menor);
